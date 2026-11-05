@@ -1,0 +1,156 @@
+============================================================
+Voice tags and prefixes share numbers
+============================================================
+WEBVTT
+
+00:01.000 --> 00:02.000
+<v Alice>Hi</v>
+
+00:02.000 --> 00:03.000
+<v.loud Bob>Hey
+still Bob
+
+00:03.000 --> 00:04.000
+alice:  case and spaces
+- Bob: dash
+>> Carol: chevrons
+
+---
+
+(source_file
+  (header
+    (signature))
+  (cue
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (turn
+        (speaker_0)
+        (text)
+        (tag))))
+  (cue
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (turn
+        (speaker_1)
+        (text)
+        (text))))
+  (cue
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (turn
+        (speaker_0)
+        (text))
+      (turn
+        (speaker_1)
+        (text))
+      (turn
+        (speaker_2)
+        (text)))))
+
+============================================================
+Two voices on one line
+============================================================
+00:01.000 --> 00:02.000
+plain <v A>a</v> <v B>b</v>
+
+---
+
+(source_file
+  (cue
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (text)
+      (turn
+        (speaker_0)
+        (text)
+        (tag))
+      (turn
+        (speaker_1)
+        (text)
+        (tag)))))
+
+============================================================
+More than eight speakers fall back to a hash
+============================================================
+00:01.000 --> 00:02.000
+A1: x
+A2: x
+A3: x
+A4: x
+A5: x
+A6: x
+A7: x
+A8: x
+A9: x
+
+---
+
+(source_file
+  (cue
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (turn
+        (speaker_0)
+        (text))
+      (turn
+        (speaker_1)
+        (text))
+      (turn
+        (speaker_2)
+        (text))
+      (turn
+        (speaker_3)
+        (text))
+      (turn
+        (speaker_4)
+        (text))
+      (turn
+        (speaker_5)
+        (text))
+      (turn
+        (speaker_6)
+        (text))
+      (turn
+        (speaker_7)
+        (text))
+      (turn
+        (speaker_7)
+        (text)))))
+
+============================================================
+Lines that are not speakers
+============================================================
+00:01.000 --> 00:02.000
+At 10:30 we met
+see http://example.com
+one two three four five: too many words
+  Indented: not at line start
+late in the line Alice: no
+<vfoo>not a voice</vfoo>
+
+---
+
+(source_file
+  (cue
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (text)
+      (text)
+      (text)
+      (text)
+      (text)
+      (tag)
+      (text)
+      (tag))))

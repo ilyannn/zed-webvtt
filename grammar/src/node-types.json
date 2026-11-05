@@ -1,0 +1,390 @@
+[
+  {
+    "type": "cue",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "cue_id",
+          "named": true
+        },
+        {
+          "type": "payload",
+          "named": true
+        },
+        {
+          "type": "timing",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "description",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "header",
+    "named": true,
+    "fields": {
+      "description": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "description",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "metadata",
+          "named": true
+        },
+        {
+          "type": "signature",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "metadata",
+    "named": true,
+    "fields": {
+      "key": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "key",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "note",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "payload",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "tag",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        },
+        {
+          "type": "turn",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "region",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "setting",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "setting",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "setting_name",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "setting_value",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "cue",
+          "named": true
+        },
+        {
+          "type": "header",
+          "named": true
+        },
+        {
+          "type": "note",
+          "named": true
+        },
+        {
+          "type": "region",
+          "named": true
+        },
+        {
+          "type": "style",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "style",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "stylesheet",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "stylesheet",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "timing",
+    "named": true,
+    "fields": {
+      "end": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "timestamp",
+            "named": true
+          }
+        ]
+      },
+      "start": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "timestamp",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "setting",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "turn",
+    "named": true,
+    "fields": {
+      "speaker": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "speaker_0",
+            "named": true
+          },
+          {
+            "type": "speaker_1",
+            "named": true
+          },
+          {
+            "type": "speaker_2",
+            "named": true
+          },
+          {
+            "type": "speaker_3",
+            "named": true
+          },
+          {
+            "type": "speaker_4",
+            "named": true
+          },
+          {
+            "type": "speaker_5",
+            "named": true
+          },
+          {
+            "type": "speaker_6",
+            "named": true
+          },
+          {
+            "type": "speaker_7",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "tag",
+          "named": true
+        },
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "value",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "-->",
+    "named": false
+  },
+  {
+    "type": ":",
+    "named": false
+  },
+  {
+    "type": "NOTE",
+    "named": false
+  },
+  {
+    "type": "REGION",
+    "named": false
+  },
+  {
+    "type": "STYLE",
+    "named": false
+  },
+  {
+    "type": "cue_id",
+    "named": true
+  },
+  {
+    "type": "key",
+    "named": true
+  },
+  {
+    "type": "setting_name",
+    "named": true
+  },
+  {
+    "type": "setting_value",
+    "named": true
+  },
+  {
+    "type": "signature",
+    "named": true
+  },
+  {
+    "type": "speaker_0",
+    "named": true
+  },
+  {
+    "type": "speaker_1",
+    "named": true
+  },
+  {
+    "type": "speaker_2",
+    "named": true
+  },
+  {
+    "type": "speaker_3",
+    "named": true
+  },
+  {
+    "type": "speaker_4",
+    "named": true
+  },
+  {
+    "type": "speaker_5",
+    "named": true
+  },
+  {
+    "type": "speaker_6",
+    "named": true
+  },
+  {
+    "type": "speaker_7",
+    "named": true
+  },
+  {
+    "type": "tag",
+    "named": true
+  },
+  {
+    "type": "text",
+    "named": true
+  },
+  {
+    "type": "timestamp",
+    "named": true
+  }
+]

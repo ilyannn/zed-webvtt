@@ -1,0 +1,146 @@
+============================================================
+Header with metadata, note, style and region
+============================================================
+WEBVTT - Title
+Kind: captions
+Language: en
+
+NOTE one
+two
+
+STYLE
+::cue { color: red; }
+
+REGION
+id:r1 width:40%
+
+---
+
+(source_file
+  (header
+    (signature)
+    (description)
+    (metadata
+      (key)
+      (value))
+    (metadata
+      (key)
+      (value)))
+  (note)
+  (style
+    (stylesheet))
+  (region
+    (setting
+      (setting_name)
+      (setting_value))
+    (setting
+      (setting_name)
+      (setting_value))))
+
+============================================================
+Cue identifiers, settings and tags
+============================================================
+WEBVTT
+
+intro
+00:00:01.000 --> 00:00:02.000 align:start line:0
+<i>Hi</i> &amp; <00:00:01.500>bye < there
+
+NOTES are not a note
+00:03.000 --> 00:04.000
+x
+
+---
+
+(source_file
+  (header
+    (signature))
+  (cue
+    (cue_id)
+    (timing
+      (timestamp)
+      (timestamp)
+      (setting
+        (setting_name)
+        (setting_value))
+      (setting
+        (setting_name)
+        (setting_value)))
+    (payload
+      (tag)
+      (text)
+      (tag)
+      (text)
+      (tag)
+      (text)))
+  (cue
+    (cue_id)
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (text))))
+
+============================================================
+SRT with CRLF and no final newline
+============================================================
+1
+00:00:00,500 --> 00:00:03,000
+HOST: hello
+
+2
+00:00:03,200 --> 00:00:07,900
+thanks
+
+---
+
+(source_file
+  (cue
+    (cue_id)
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (turn
+        (speaker_0)
+        (text))))
+  (cue
+    (cue_id)
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (text))))
+
+============================================================
+Several blank lines and cue without text
+============================================================
+
+
+WEBVTT
+
+
+   
+00:01.000 --> 00:02.000
+
+
+00:02.000 --> 00:03.000
+text
+
+
+
+---
+
+(source_file
+  (header
+    (signature))
+  (cue
+    (timing
+      (timestamp)
+      (timestamp)))
+  (cue
+    (timing
+      (timestamp)
+      (timestamp))
+    (payload
+      (text))))

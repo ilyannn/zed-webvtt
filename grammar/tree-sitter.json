@@ -1,0 +1,22 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "webvtt",
+      "camelcase": "WebVTT",
+      "title": "WebVTT",
+      "scope": "text.vtt",
+      "path": ".",
+      "file-types": ["vtt", "srt"],
+      "highlights": "../languages/webvtt/highlights.scm",
+      "injections": "../languages/webvtt/injections.scm"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "WebVTT and SRT subtitles, with speakers told apart",
+    "authors": [{ "name": "Ilya Nikokoshev" }],
+    "links": { "repository": "https://github.com/ilyannn/zed-webvtt" }
+  }
+}

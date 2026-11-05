@@ -1,0 +1,17 @@
+1
+00:00:00,500 --> 00:00:03,000
+INTERVIEWER: So how did the project start?
+
+2
+00:00:03,200 --> 00:00:07,900
+GUEST: Honestly, by accident.
+We needed subtitles for one video.
+
+3
+00:00:08,100 --> 00:00:10,000
+<i>[laughter]</i>
+
+4
+00:00:10,200 --> 00:00:12,500
+- Interviewer: And then?
+- Guest: Then it grew.

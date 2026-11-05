@@ -1,0 +1,31 @@
+WEBVTT - Weekly sync
+Kind: captions
+Language: en
+
+NOTE Speakers come from Teams-style voice tags and Zoom-style prefixes.
+Both forms of the same name get the same colour.
+
+STYLE
+::cue(v[voice="Alice"]) { color: green; }
+
+REGION
+id:fred width:40% lines:3
+
+1
+00:00:01.000 --> 00:00:04.200
+<v Alice>Hello, and welcome to the weekly sync.</v>
+
+2
+00:00:04.500 --> 00:00:07.800 align:start position:10%
+<v.loud Bob>Thanks! Today we talk about <i>subtitles</i>.
+And this second line is still Bob.
+
+intro
+00:00:08.000 --> 00:00:10.000
+Alice: Same speaker as cue 1, written as a prefix.
+- Carol: A dialogue dash, then
+- Bob: another speaker in the same cue.
+
+00:01:02.345 --> 00:01:05.000
+Nobody in particular says this, at 10:30, see http://example.com.
+<v Dave>Dave</v> <v Erin>and Erin</v> share a line.
