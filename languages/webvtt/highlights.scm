@@ -7,7 +7,7 @@
 ; Blocks
 (note) @comment
 ["STYLE" "REGION"] @keyword
-(cue_id) @label
+(cue_id) @label.cue_id
 
 ; Timing and settings
 (timestamp) @number
