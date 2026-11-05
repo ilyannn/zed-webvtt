@@ -1,0 +1,3 @@
+#!/bin/sh
+# Block the push unless lint and tests pass.
+exec just check
