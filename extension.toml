@@ -1,0 +1,12 @@
+id = "webvtt"
+name = "WebVTT"
+description = "WebVTT and SRT subtitles, with each speaker in a colour of their own"
+version = "0.1.0"
+schema_version = 1
+authors = ["ilyannn"]
+repository = "https://github.com/ilyannn/zed-webvtt"
+
+[grammars.webvtt]
+repository = "https://github.com/ilyannn/zed-webvtt"
+rev = "52e91d8bf1d57318d33df3a93de08a614b42a4d2"
+path = "grammar"

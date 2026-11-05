@@ -1,0 +1,3 @@
+name = "WebVTT"
+grammar = "webvtt"
+path_suffixes = ["vtt", "srt"]
